@@ -1,0 +1,110 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13572664431,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeOpenBrowser()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "View third Slide",
+        "description": "",
+        "id": "travelex-slider;view-third-slide",
+        "after": [
+          {
+            "result": {
+              "duration": 1069813689,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterCloseBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 276540859,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on home page",
+            "match": {
+              "location": "TravelexSteps.i_am_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 54602030,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I resize my window to 550 px",
+            "match": {
+              "arguments": [
+                {
+                  "val": "550",
+                  "offset": 22
+                }
+              ],
+              "location": "TravelexSteps.i_resize_my_window_to_px(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5478867469,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "swipe sliders to the third slide",
+            "match": {
+              "location": "TravelexSteps.swipe_sliders_to_the_third_slide()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64842636,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should see slide title as \"Exchange rate updates\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Exchange rate updates",
+                  "offset": 29
+                }
+              ],
+              "location": "TravelexSteps.i_should_see_slide_title_as(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@1"
+          }
+        ]
+      }
+    ],
+    "name": "Travelex slider",
+    "description": "\r\nAs a user\r\nI would like to view travelex home page in compressed screen\r\nSo that i could see information in slides",
+    "id": "travelex-slider",
+    "keyword": "Feature",
+    "uri": "src/test/features/travelex.feature"
+  }
+]
